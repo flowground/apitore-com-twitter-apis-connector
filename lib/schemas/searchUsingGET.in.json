@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "q": {
+            "required": true,
+            "type": "string"
+        },
+        "sinceId": {
+            "required": false,
+            "type": "integer",
+            "format": "int64",
+            "default": -1
+        },
+        "maxId": {
+            "required": false,
+            "type": "integer",
+            "format": "int64",
+            "default": -1
+        },
+        "iter": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+        }
+    }
+}

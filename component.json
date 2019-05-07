@@ -1,0 +1,85 @@
+{
+    "title": "Twitter APIs",
+    "description": "Call Twitter APIs.<BR />[Endpoint] https://api.apitore.com/api/23",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/apitore.com/twitterApis/0.0.2/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.apitore.com/api/23",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "myTimelineUsingGET": {
+            "main": "./lib/actions/myTimelineUsingGET.js",
+            "title": "Get my tweets.",
+            "description": "Get my timeline tweets.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/twitter-response\">twitter-response</a><BR />&nbsp; Class: com.apitore.banana.response.twitter.TwitterResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/myTimelineUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "myTweetUsingGET": {
+            "main": "./lib/actions/myTweetUsingGET.js",
+            "title": "Get my tweets.",
+            "description": "Get my tweets.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/twitter-response\">twitter-response</a><BR />&nbsp; Class: com.apitore.banana.response.twitter.TwitterResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/myTweetUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "searchUsingGET": {
+            "main": "./lib/actions/searchUsingGET.js",
+            "title": "Search tweets.",
+            "description": "Tweets search API.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/twitter-response\">twitter-response</a><BR />&nbsp; Class: com.apitore.banana.response.twitter.TwitterResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/searchUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
