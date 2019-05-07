@@ -1,11 +1,11 @@
-# ![LOGO](logo.png) Twitter APIs MSP Connector
+# ![LOGO](logo.png) Twitter APIs **flow**ground Connector
 
 ## Description
 
-A generated MSP connector for the Twitter APIs API (version 0.0.2).
+A generated **flow**ground connector for the Twitter APIs API (version 0.0.2).
 
 Generated from: https://api.apis.guru/v2/specs/apitore.com/twitterApis/0.0.2/swagger.json<br/>
-Generated at: 2019-05-07T11:17:07+03:00
+Generated at: 2019-05-07T17:36:46+03:00
 
 ## API Description
 
@@ -56,7 +56,7 @@ This API does not require authorization.
 
 ## License
 
-flowground :- Telekom iPaaS / apitore-com-twitter-apis-connector<br/>
+**flow**ground :- Telekom iPaaS / apitore-com-twitter-apis-connector<br/>
 Copyright © 2019, [Deutsche Telekom AG](https://www.telekom.de)<br/>
 contact: flowground@telekom.de
 
